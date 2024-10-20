@@ -1,6 +1,15 @@
-export default function AvailablePlayers(){
-   
+export default function AvailablePlayers  ({ players, addPlayerToTeam }) {
     return (
-        <div>AvailablePlayers</div>
+        <div>
+            <h2>Available Players</h2>
+            <ul>
+                {players.map(player => (
+                    <li key={player._id}>
+                        {player.name} ({player.role}) - {player.points} pts
+                        <button onClick={() => addPlayerToTeam(player)}>Add</button>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
-} 
+}
