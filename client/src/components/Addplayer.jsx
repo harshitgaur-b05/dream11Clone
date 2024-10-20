@@ -12,7 +12,7 @@ export default function AddPlayer() {
     const handleSubmit = async (e) => {
         e.preventDefault(); // Prevents page reload
         try {
-            const res = await axios.post("http://localhost:2000/players", {
+            const res = await axios.post("https://dream11clone.onrender.com/players", {
                 name: name,
                 position: position,
                 team: team,

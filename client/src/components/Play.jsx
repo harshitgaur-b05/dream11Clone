@@ -11,7 +11,7 @@ function Play() {
   const [team, setTeam] = useState(null);
 
   useEffect(() => {
-    axios.get('http://localhost:2000/players')
+    axios.get('https://dream11clone.onrender.com/players')
       .then(response => setPlayers(response.data))
       .catch(error => console.log(error));
   }, []);
@@ -23,7 +23,7 @@ function Play() {
   };
 
   const createTeam = () => {
-    axios.post('http://localhost:2000/teams', {
+    axios.post('https://dream11clone.onrender.com/teams', {
       name: teamName,
       players: selectedPlayers.map(p => p._id)
     }).then(response => {
