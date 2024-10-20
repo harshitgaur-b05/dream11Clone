@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
 
 
+
   
      mongoose.connect('mongodb+srv://fullpaytmuser:etx8eIp2j25GLjPT@cluster0.jojeyht.mongodb.net/')
     console.log('MongoDB connected');
