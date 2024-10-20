@@ -5,7 +5,7 @@ export default function AvailablePlayers  ({ players, addPlayerToTeam }) {
             <ul>
                 {players.map(player => (
                     <li key={player._id}>
-                        {player.name} ({player.role}) - {player.points} pts
+                        {player.name} ({player.position}) - {player.points} pts
                         <button onClick={() => addPlayerToTeam(player)}>Add</button>
                     </li>
                 ))}
