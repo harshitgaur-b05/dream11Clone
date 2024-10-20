@@ -1,5 +1,5 @@
-export default function TeamCreationForm (){
+export default function TeamCreationForm(){
     return (
         <div>TeamCreationForm </div>
-    )
+    );
 } 
