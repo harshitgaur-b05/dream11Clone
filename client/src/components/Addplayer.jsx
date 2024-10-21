@@ -10,7 +10,7 @@ export default function AddPlayer() {
     const [points, setPoints] = useState(0);
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Prevents page reload
+        // e.preventDefault(); // Prevents page reload
         try {
             const res = await axios.post("https://dream11clone.onrender.com/players", {
                 name: name,
